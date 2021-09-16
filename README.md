@@ -23,13 +23,75 @@ spinWords("This is another test") => "This is rehtona test"
 
 #### Day 2 -  [List Filtering](./Day2-List-Filtering/main.js)
 
-**Description**
+**Description:**
 In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
 
-**Examples**
+**Examples:**
 ```
 filter_list([1,2,'a','b']) == [1,2]
 filter_list([1,'a','b',0,15]) == [1,0,15]
 filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+
+```
+
+#### Day 3 -  [Duplicate Encoder](./Day3-Duplicate-Encoder/main.js)
+
+**Description:**
+The goal of this exercise is to convert a string to a new string where each character in the new string is "(" if that character appears only once in the original string, or ")" if that character appears more than once in the original string. Ignore capitalization when determining if a character is a duplicate.
+
+**Examples:**
+```
+
+"din"      =>  "((("
+"recede"   =>  "()()()"
+"Success"  =>  ")())())"
+"(( @"     =>  "))((" 
+
+```
+
+
+#### Day 4 -  [You're A Square](./Day4-You're-a-square!/main.js)
+
+**Description:**
+Given an integral number, determine if it's a square number:
+
+In mathematics, a square number or perfect square is an integer that is the square of an integer; in other words, it is the product of some integer with itself.
+
+The tests will always use some integral number, so don't worry about that in dynamic typed languages.
+
+**Examples:**
+
+```
+
+-1  =>  false
+ 0  =>  true
+ 3  =>  false
+ 4  =>  true
+25  =>  true
+26  =>  false
+
+```
+
+#### Day 5 -  [Printer Errors](./Day5-Printer-Errors/main.js)
+
+**Description:**
+In a factory a printer prints labels for boxes. For one kind of boxes the printer has to use colors which, for the sake of simplicity, are named with letters from ```a to m```.
+
+The colors used by the printer are recorded in a control string. For example a "good" control string would be ```aaabbbbhaijjjm``` meaning that the printer used three times color a, four times color b, one time color h then one time color a...
+
+Sometimes there are problems: lack of colors, technical malfunction and a "bad" control string is produced e.g. ```aaaxbbbbyyhwawiwjjjwwm``` with letters not from a to m.
+
+You have to write a function printer_error which given a string will return the error rate of the printer as a string representing a rational whose numerator is the number of errors and the denominator the length of the control string. Don't reduce this fraction to a simpler expression.
+
+The string has a length greater or equal to one and contains only letters from ato z.
+
+**Examples:**
+```
+
+s="aaabbbbhaijjjm"
+printer_error(s) => "0/14"
+
+s="aaaxbbbbyyhwawiwjjjwwm"
+printer_error(s) => "8/22"
 
 ```
