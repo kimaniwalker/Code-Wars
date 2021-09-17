@@ -112,7 +112,7 @@ Given a string, detect whether or not it is a pangram. Return True if it is, Fal
 
 ```
 
-#### Day 7 -  [Printer Errors](./Day7-Replace-With-Alphabet-Position/main.js)
+#### Day 7 -  [Replace With Alphabet Position](./Day7-Replace-With-Alphabet-Position/main.js)
 
 **Description:**
 In this kata you are required to, given a string, replace every letter with its position in the alphabet.
